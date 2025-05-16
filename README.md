@@ -65,7 +65,7 @@ termux-setup-storage
 ### 2. Download and Configure Script
 
 ```bash
-curl -O https://example.com/auto-sync.sh
+curl -O https://github.com/betsha1830/auto-sync.git
 chmod +x auto-sync.sh
 nano auto-sync.sh
 ```
