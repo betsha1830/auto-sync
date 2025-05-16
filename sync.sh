@@ -9,9 +9,11 @@ fi
 # --- Configuration ---
 BOT_TOKEN="TELEGRAM_BOT_API_KEY"
 CHAT_ID="RECIPIENT_USER_ID"
+UPLOAD_INTERVAL=3600  # Database upload interval in seconds (3600=1 hour)
+
+# --- Storage files ---
 LOG_FILE="$HOME/telegram_sync.log"
 DB_FILE="$HOME/uploaded_files.db"
-UPLOAD_INTERVAL=3600  # Database upload interval in seconds (3600=1 hour)
 
 # Folders to monitor
 FOLDERS_TO_WATCH=(
@@ -34,6 +36,7 @@ THUMBNAIL_PATTERNS=(
     ".*[_-][0-9]+x[0-9]+.*"     # Matches 64x64, 128x128, etc (e.g., icon_64x64.png)
     ".*\.trashed-.*"            # Trashed files
     ".*/\.fs/.*"
+    ".*/\.gs_fs0/.*"
 )
 
 # --- Global Variables ---
