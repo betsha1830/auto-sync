@@ -148,9 +148,6 @@ curl -F document=@test.jpg "https://api.telegram.org/bot$BOT_TOKEN/sendDocument?
 
 - Store bot tokens securely
 - Use private Telegram channels
-- Regularly rotate backup databases
-- Audit exclusion patterns periodically
-- Avoid syncing sensitive unencrypted files
 
 ## 📜 License
 
